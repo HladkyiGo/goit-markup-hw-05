@@ -28,13 +28,13 @@
 
           <ul class="site-nav list">
             <li class="navigation-menu">
-              <a href="./index.html" class="link current">Студия</a>
+              <a href="./index.html" class="link line current">Студия</a>
             </li>
             <li class="navigation-menu">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+              <a href="./portfolio.html" class="link line">Портфолио</a>
             </li>
             <li class="navigation-menu">
-              <a href="" class="link">Контакты</a>
+              <a href="" class="link line">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -49,7 +49,7 @@
           <li class="navigation-item">
             <a href="tel:+380961111111" class="link tel"
               ><svg class="tel-icon">
-                <use href="./svg/sprite.svg#smartphone"></use></svg >+38(096) 111-11-11</a>
+                <use href="./svg/sprite.svg#smartphone"></use></svg>+38(096) 111-11-11</a >
           </li>
         </ul>
       </div>
@@ -60,8 +60,11 @@
 
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">ЭФФЕКТИВНЫЕ РИШЕНИЕ<br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <a href="" class="button current">Заказать услугу</a>
+          <h1 class="hero-title">
+            ЭФФЕКТИВНЫЕ РИШЕНИЕ<br />
+            ДЛЯ ВАШЕГО БИЗНЕСА
+          </h1>
+          <button data-modal-open class="button current">Заказать услугу<button>
         </div>
       </section>
 
@@ -128,29 +131,29 @@
           <ul class="work-list list">
             <li class="page">
               <div class="product-thumb">
-              <a href=""></a>
-              <img src="./img/1.png" alt="" width="370" height="294" />
-             <div class="work-text-item">
-              <p class="work-text">ДЕСКТОПНЫЕ ПРИЛОЖЕННИЯ</p>
-              </div>
-              </div>
-            </li>
-            <li class="page">
-              <div class="product-thumb">
-              <a href=""></a>
-              <img src="./img/2.png" alt="" width="370" height="294" />
-              <div class="work-text-item">
-              <p class="work-text">МОБИЛЬНЫЕ ПРИЛОЖЕННИЯ</p>
-              </div>
+                <a href=""></a>
+                <img src="./img/1.png" alt="" width="370" height="294" />
+                <div class="work-text-item">
+                  <p class="work-text">ДЕСКТОПНЫЕ ПРИЛОЖЕННИЯ</p>
+                </div>
               </div>
             </li>
             <li class="page">
               <div class="product-thumb">
-              <a href=""></a>
-              <img src="./img/3.png" alt="" width="370" height="294" />
-               <div class="work-text-item">
-              <p class="work-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+                <a href=""></a>
+                <img src="./img/2.png" alt="" width="370" height="294" />
+                <div class="work-text-item">
+                  <p class="work-text">МОБИЛЬНЫЕ ПРИЛОЖЕННИЯ</p>
+                </div>
               </div>
+            </li>
+            <li class="page">
+              <div class="product-thumb">
+                <a href=""></a>
+                <img src="./img/3.png" alt="" width="370" height="294" />
+                <div class="work-text-item">
+                  <p class="work-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+                </div>
               </div>
             </li>
           </ul>
@@ -427,5 +430,16 @@
         </div>
       </div>
     </footer>
+
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close class="modal-button" >
+          <svg class="modal-icon">
+            <use href="./svg/sprite.svg#close1"></use>
+          </svg> 
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
